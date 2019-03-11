@@ -40,8 +40,8 @@
    - name: start apache-tomcat-8.5.38
      command: /home/ubuntu/tomcat/apache-tomcat-8.5.38/bin/startup.sh
 
-   - name: copy new_project.war
-     copy: src=target/new_project.war dest=/home/ubuntu/tomcat/apache-tomcat-8.5.38/webapps/
+   - name: copy apple.war
+     copy: src=target/apple.war dest=/home/ubuntu/tomcat/apache-tomcat-8.5.38/webapps/
 
    - name: stop apache-tomcat-8.5.38
      command: nohup "/home/ubuntu/tomcat/apache-tomcat-8.5.38/bin/shutdown.sh"
